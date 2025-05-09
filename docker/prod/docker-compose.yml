@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: chatgpt-api-app
+    build:
+      context: .
+      dockerfile: ./app/Dockerfile
+    image: chatgpt-api-app:latest
+    restart: always
+    volumes:
+      - ./:/var/www/html
+    environment:
+      APP_ENV: production
+      APP_DEBUG: 'false'
+      APP_KEY: ${APP_KEY}
+
+  nginx:
+    container_name: chatgpt-api-nginx
+    image: nginx:stable-alpine
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/var/www/html
+    depends_on:
+      - app
