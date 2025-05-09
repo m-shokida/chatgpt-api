@@ -25,9 +25,6 @@ jobs:
           cd /var/www/chatgpt-api/
           git fetch origin develop
           git reset --hard origin/develop
-          composer install --no-dev --optimize-autoloader
-          php artisan migrate --force
-          php artisan config:cache
-          php artisan route:cache
-          sudo systemctl reload nginx
+          docker compose down
+          docker compose up -d --build
         EOF
