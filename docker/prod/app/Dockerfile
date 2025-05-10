@@ -28,8 +28,6 @@ RUN composer install --no-dev --optimize-autoloader
 RUN chmod -R 755 /var/www/html \
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
-COPY .env.production .env
-
 # Expose port
 EXPOSE 9000
 
