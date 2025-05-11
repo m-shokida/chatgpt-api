@@ -7,11 +7,11 @@ use OpenAI\Laravel\Facades\OpenAI;
 
 class OpenAiChatService implements ChatServiceInterface
 {
-    public function __construct(
+    function __construct(
         protected string $systemPrompt = 'あなたは親切で丁寧なAIアシスタントです。'
     ) {}
 
-    public function ask(string $message): string
+    function ask(string $message): string
     {
         $result = OpenAI::chat()->create([
             'model' => 'gpt-4o',

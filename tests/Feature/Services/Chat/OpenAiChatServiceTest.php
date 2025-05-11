@@ -10,7 +10,7 @@ use OpenAI\Responses\Chat\CreateResponse;
 
 class OpenAiChatServiceTest extends TestCase
 {
-    public function test_ask_returns_expected_response()
+    function test_mocked_returns_openai_response()
     {
         $fakeResponse = CreateResponse::fake([
             'choices' => [
