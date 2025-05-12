@@ -19,8 +19,6 @@
 - Laravel (APIサーバー)
 - OpenAI API (ChatGPT)
 
----
-
 ## セットアップ
 
 準備中
