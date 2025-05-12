@@ -1,6 +1,6 @@
 # ChatGPT API Proxy Service
 
-このプロジェクトは、**OpenAIが提供するChatGPT APIを無料で利用できるようにするサービス**です。
+このリポジトリは、OpenAIのChatGPT APIを簡単に利用するためのバックエンドAPIを提供します。
 
 ## 概要
 
@@ -57,11 +57,11 @@ ChatGPTに質問を送り、OpenAI API経由で応答を取得します。
 
 ## 免責事項
 
-本プロジェクトは、OpenAIが提供するAPIを活用するための非公式なツールです。  
-当プロジェクトの使用により生じた損害やトラブルについて、作成者は一切の責任を負いません。  
+本プロジェクトは、OpenAIが提供するAPIを活用するための非公式なツールです。
+当プロジェクトの使用により生じた損害やトラブルについて、作成者は一切の責任を負いません。
 利用者ご自身の責任のもとでご利用ください。
 
-また、OpenAIのAPI利用には [利用規約](https://openai.com/ja-JP/policies/terms-of-use/) への同意が必要です。  
+また、OpenAIのAPI利用には [利用規約](https://openai.com/ja-JP/policies/terms-of-use/) への同意が必要です。
 APIキーや利用状況に応じた課金等も、利用者が管理してください。
 
 ## ライセンス
